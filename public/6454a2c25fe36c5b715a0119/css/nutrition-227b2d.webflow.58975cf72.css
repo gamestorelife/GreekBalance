@@ -183,6 +183,17 @@ input[type="search"]::-webkit-search-decoration {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  align-items: center;
+}
+.gender-buttons {
+  display: flex;
+  padding: 10px;
+}
+.gender-buttons a {
+  padding: 4px;
+  border-radius: 25px;
+  font-weight: 800;
+  color: #fff;
 }
 
 fieldset {
@@ -281,6 +292,9 @@ img {
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
+}
+.img-button-logo {
+  width: 60%;
 }
 
 html.w-mod-touch * {
