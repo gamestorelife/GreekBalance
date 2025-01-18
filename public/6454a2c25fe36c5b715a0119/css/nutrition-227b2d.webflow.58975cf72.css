@@ -180,6 +180,13 @@ input[type="search"]::-webkit-search-decoration {
 }
 .banner-prompet {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner-prompet--home {
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -195,7 +202,32 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 800;
   color: #fff;
 }
-
+.age-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.age-buttons {
+  display: flex;
+  padding: 10px;
+}
+.age-buttons a {
+  padding: 4px;
+  border-radius: 25px;
+  font-weight: 800;
+  color: #fff;
+}
+.prompet-button {
+  color: #fff !important;
+  font-size: 25px !important;
+  background: #668f6b !important;
+  font-family: Marcellus, sans-serif;
+  padding: 9px !important;
+  border-radius: 25px !important;
+}
+.age-buttons-row {
+  display: flex;
+}
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
@@ -2317,6 +2349,12 @@ h6 {
   margin-right: auto;
 }
 
+.main-g-content {
+  width: 95%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .main-content.utility-banner-content {
   padding-top: 120px;
   padding-bottom: 40px;
@@ -2686,7 +2724,7 @@ h6 {
 }
 
 .hero {
-  height: 100vh;
+  height: auto;
   background-image: url("../6454bf033fef3604189d05a3_hero-bg.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -2736,7 +2774,11 @@ h6 {
 }
 
 .banner {
-  height: 90vh;
+  height: auto;
+  padding-bottom: 20px;
+}
+.g-banner {
+  height: auto;
   padding-bottom: 20px;
 }
 
@@ -2745,6 +2787,22 @@ h6 {
   flex-direction: column;
   justify-content: flex-end;
   display: flex;
+}
+
+@media (min-width: 768px) {
+  /* Adjust the min-width as needed for your definition of desktop */
+  .banner-wrapper {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    padding-top: 80px;
+  }
+  .g-banner {
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 75px;
+  }
 }
 
 .banner-inner {
